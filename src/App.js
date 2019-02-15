@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Banner from './components/Banner';
-import logo from './logo.svg';
+import Jim from './components/Jim';
 import hun from './hunter.png';
 import Hunter from './components/Hunter';
 
@@ -9,7 +9,7 @@ import './App.css';
 class App extends Component {
   render() {
     const funky = {
-      "background": "#000",
+      "background": "#fff",
       "color": "#f00",
       "fontSize": "24px",
       "padding": "30px",
@@ -18,7 +18,7 @@ class App extends Component {
   }
     const FunctionalComponent = () => (
       <div>
-        <h1 style = {funky}>Functional Component text</h1>
+        <h1 style = {funky}><a href="https://codejoy-wins.github.io/">Jann Software</a></h1>
       </div>
     )
 
@@ -33,6 +33,7 @@ class App extends Component {
         <Hunter/>
         <header className="App-header">
           <img src={hun} className="App-logo" alt="logo" />
+          <div id ="black"></div>
           <p>
             Hire <code>codejoy</code> to make your website.
           </p>
@@ -44,11 +45,13 @@ class App extends Component {
           >
             View Portfolio
           </a>
-          <img src={hun} alt="hunt"></img>
+          <Jim/>
+          {/* <img src={hun} alt="hunt"></img> */}
         </header>
-        <p>Below is one functional component with two different argurments as attributes</p>
+        {/* <p>Below is one functional component with two different argurments as attributes</p>
         <HelloWorld name="pikachu"/>
-        <HelloWorld name="charizard"/>
+        <HelloWorld name="charizard"/> */}
+        <FunctionalComponent/>
       </div>
     );
   }

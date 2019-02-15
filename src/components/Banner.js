@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import './../components/css/Banner.css';
+
 
 export class Banner extends Component {
 
@@ -14,7 +16,7 @@ export class Banner extends Component {
     }
     return (
       <div>
-        <h1 style = {myStyle}>Jann Software</h1>
+        <h1 style = {myStyle}> <a href="https://codejoy-wins.github.io/">Jann Software</a></h1>
       </div>
     )
   }
